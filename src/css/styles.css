@@ -106,10 +106,13 @@ body.dark-theme {
 
   display: flex;
 
+  padding: 0;
+
   font-size: 1.2rem;
   color: var(--text-color);
 
-  fill: var(--text-color);
+  background-color: transparent;
+  border: none;
 }
 
 .change-theme:hover {
@@ -141,13 +144,39 @@ body.dark-theme {
 
   display: none;
 
+  padding: 0;
+
   font-size: 1.2rem;
   color: var(--text-color);
 
-  fill: var(--text-color);
+  background-color: transparent;
+  border: none;
 }
 
 .generate-pdf:hover {
+  color: var(--title-color);
+}
+
+/* ========== Link to Resume site ========== */
+.link-resume {
+  cursor: pointer;
+
+  position: absolute;
+  top: 1rem;
+  left: 0;
+
+  display: none;
+
+  padding: 0;
+
+  font-size: 1.2rem;
+  color: var(--text-color);
+
+  background-color: transparent;
+  border: none;
+}
+
+.link-resume:hover {
   color: var(--title-color);
 }
 
@@ -177,6 +206,7 @@ body.dark-theme {
 
 .bd-grid {
   display: grid;
+  flex-grow: 1;
   gap: 1rem;
 }
 
@@ -201,7 +231,7 @@ body.dark-theme {
   fill: var(--text-color-light);
 }
 
-/* ========== Dovnload PDF button ??? ========== */
+/* ========== Dovnload PDF button ========== */
 .home__button-movil {
   display: inline-block;
 
@@ -280,13 +310,10 @@ body.dark-theme {
   font-size: var(--smaller-font-size);
   font-weight: var(--font-medium);
   color: var(--text-color-light);
-
-  fill: var(--text-color-light);
 }
 
 .nav__link:hover {
   color: var(--title-color);
-  fill: var(--title-color);
 }
 
 .nav__icon {
@@ -302,7 +329,6 @@ body.dark-theme {
 /* Active menu link */
 .active-link {
   color: var(--title-color);
-  fill: var(--title-color);
 }
 
 /* ==== Бургер меню ==== */
@@ -335,6 +361,12 @@ body.dark-theme {
   transition: 0.3s;
 }
 
+.burger:hover,
+.burger:hover::before,
+.burger:hover::after {
+  background: var(--title-color);
+}
+
 .burger::before {
   content: '';
   top: -6px;
@@ -349,12 +381,6 @@ body.dark-theme {
   transition:
     bottom 300ms 300ms,
     transform 300ms cubic-bezier(0.23, 1, 0.32, 1);
-}
-
-.burger:hover,
-.burger:hover::before,
-.burger:hover::after {
-  background: var(--title-color);
 }
 
 .burger.active::before {
@@ -399,8 +425,14 @@ body.dark-theme {
 
 .home__img {
   justify-self: center;
+
   width: 200px;
   height: 200px;
+
+  background-image: radial-gradient(
+    var(--container-color-alt),
+    var(--text-color-light)
+  );
   border-radius: 50%;
 }
 
@@ -440,6 +472,7 @@ body.dark-theme {
 
 .home__address {
   gap: 1rem;
+  font-style: normal;
 }
 
 .home__icon {
@@ -485,8 +518,6 @@ body.dark-theme {
 
   font-size: var(--small-font-size);
   color: var(--text-color);
-
-  fill: var(--text-color);
 }
 
 .social__link:hover {
@@ -503,7 +534,6 @@ body.dark-theme {
   display: flex;
   font-size: 1.2rem;
   vertical-align: top;
-  fill: var(--text-color);
 }
 
 /* ========== SKILLS AND LANGUAGES ========== */
@@ -519,8 +549,10 @@ body.dark-theme {
   align-items: center;
 }
 
-.skills__circle,
-.languages__circle {
+.skills__circle::before,
+.languages__circle::before {
+  content: '';
+
   display: inline-block;
 
   width: 5px;
@@ -532,31 +564,19 @@ body.dark-theme {
   border-radius: 50%;
 }
 
-.skills__f-line,
-.languages__f-line {
-  display: flex;
-
-  width: 100%;
-  height: 2px;
-
-  background: var(--body-color);
-  border-radius: 5px;
-}
-
-.skills__line,
-.languages__line {
-  height: 2px;
-  background: var(--text-color);
-  border-radius: 5px;
-}
-
 /* ========== EDUCATION - PROJECT - EXPERIENCE - COURSES - CERTIFICATES ========== */
 .project__link {
-  color: var(--title-color);
+  color: var(--text-color);
 }
 
 .project__link:hover {
-  color: var(--text-color-light);
+  color: var(--title-color);
+}
+
+.project__icon {
+  display: flex;
+  font-size: 1.2rem;
+  vertical-align: top;
 }
 
 .education__content,
@@ -565,14 +585,6 @@ body.dark-theme {
 .courses__content,
 .certificate__content {
   display: flex;
-}
-
-.education__time,
-.project__time,
-.experience__time,
-.courses__time,
-.certificate__time {
-  padding-right: 1rem;
 }
 
 .education__rounder,
@@ -587,6 +599,7 @@ body.dark-theme {
   width: 16px;
   height: 16px;
   margin-top: 0.1rem;
+  margin-right: 1rem;
 
   background-color: var(--text-color-light);
   border-radius: 50%;
@@ -615,12 +628,20 @@ body.dark-theme {
   gap: 0.5rem;
 }
 
+.project__data div {
+  display: flex;
+  gap: 0.5rem;
+  justify-content: space-between;
+}
+
 .education__title,
 .project__title,
 .experience__title,
 .courses__title,
+.courses__title,
 .certificate__title {
   display: inline;
+  margin-right: auto;
   font-size: var(--h3-font-size);
 }
 
@@ -653,6 +674,10 @@ body.dark-theme {
   visibility: hidden;
   background-color: var(--container-color-alt);
   border-radius: 0.4rem;
+  box-shadow:
+    0 1px 3px 0 rgb(112 112 112 / 20%),
+    0 1px 1px 0 rgb(112 112 112 / 14%),
+    0 2px 1px -1px rgb(112 112 112 / 12%);
 
   transition: 0.4s;
 }
@@ -660,7 +685,6 @@ body.dark-theme {
 .scrolltop__icon {
   font-size: 1.2rem;
   color: var(--text-color);
-  fill: var(--text-color);
 }
 
 .show-scroll {

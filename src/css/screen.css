@@ -50,11 +50,10 @@
   }
 
   .generate-pdf {
-    display: inline-block;
+    display: flex;
   }
 
-  .section-title,
-  .summary__description {
+  .section-title {
     text-align: initial;
   }
 
