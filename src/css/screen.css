@@ -1,0 +1,72 @@
+/* ========== MEDIA QUERIES ========== */
+
+/* For small devices, menu two columns */
+@media screen and (width <= 320px) {
+  .nav__list {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem 0.5rem;
+  }
+}
+@media screen and (width >= 500px) and (width <= 967px) {
+  .social__container,
+  .interests__container,
+  .skills__container,
+  .languages__container {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+  }
+}
+
+/* Classes modified for large screen size */
+@media screen and (width >= 968px) {
+  body {
+    margin: 3rem 0;
+  }
+
+  .bd-container {
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .l-header,
+  .scrolltop {
+    display: none;
+  }
+
+  .resume {
+    display: grid;
+    grid-template-columns: 0.5fr 1fr;
+    background-color: var(--container-color);
+    box-shadow: 0 0 8px rgb(13 12 12 / 15%);
+  }
+
+  .resume__left {
+    background-color: var(--container-color-alt);
+  }
+
+  .resume__left,
+  .resume__right {
+    padding: 0 1.5rem;
+  }
+
+  .generate-pdf {
+    display: inline-block;
+  }
+
+  .section-title,
+  .summary__description {
+    text-align: initial;
+  }
+
+  .home__container {
+    gap: 1.5rem;
+  }
+
+  .home__button-movil {
+    display: none;
+  }
+
+  .references__container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

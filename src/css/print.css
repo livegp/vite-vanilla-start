@@ -1,0 +1,141 @@
+@media print, screen and (width >= 968px) {
+  .l-header,
+  .scrolltop,
+  .chenge-theme,
+  .generate-pdf,
+  .home__button-movil {
+    display: none;
+  }
+
+  body {
+    --h1-font-size: 0.938rem;
+    --h2-font-size: 0.938rem;
+    --h3-font-size: 0.875rem;
+    --normal-font-size: 0.813rem;
+    --small-font-size: 0.75rem;
+    --smaller-font-size: 0.688rem;
+
+    margin: 0;
+  }
+
+  .home__icon,
+  .social__icon,
+  .interests__icon {
+    font-size: 1rem;
+  }
+
+  .section-title {
+    margin-bottom: 0.75rem;
+  }
+
+  .resume__left,
+  .resume__right {
+    padding: 0 1rem;
+  }
+
+  .section {
+    padding: 0.75rem 0 0;
+  }
+
+  .home__container {
+    gap: 1.5rem;
+  }
+
+  .home__data {
+    gap: 0.25rem;
+  }
+
+  .home__address,
+  .social__container,
+  .interests__container,
+  .languages__container,
+  .skills__container,
+  .education__container,
+  .project__container,
+  .experience__container,
+  .courses__container,
+  .certificate__container {
+    gap: 0.7rem;
+  }
+
+  .education__time,
+  .project__time,
+  .experience__time,
+  .courses__time,
+  .certificate__time {
+    padding-right: 0.5rem;
+  }
+
+  .education__rounder,
+  .project__rounder,
+  .experience__rounder,
+  .courses__rounder,
+  .certificate__rounder {
+    width: 11px;
+    height: 11px;
+    margin-top: 0.22rem;
+  }
+
+  .education__line,
+  .project__line,
+  .experience__line,
+  .courses__line,
+  .certificate__line {
+    transform: translate(5px, 0);
+    width: 1px;
+    height: 110%;
+  }
+
+  .education__data,
+  .project__data,
+  .experience__data,
+  .courses__data,
+  .certificate__data {
+    gap: 0.25rem;
+  }
+
+  .interests__container,
+  .skills_container_,
+  .languages__container {
+    font-size: var(--small-font-size);
+  }
+
+  .home__img {
+    width: 100px;
+    height: 100px;
+  }
+
+  .home__section {
+    height: 100px;
+  }
+
+  .resume {
+    display: grid;
+    grid-template-columns: 0.5fr 1fr;
+    background-color: var(--container-color);
+    box-shadow: 0 0 8px rgb(13 12 12 / 15%);
+  }
+
+  .resume__left {
+    padding: 0 1.5rem;
+    background-color: var(--container-color-alt);
+  }
+
+  .resume__right {
+    padding: 0 1.5rem;
+  }
+
+  .section-title,
+  .summary__description {
+    text-align: initial;
+  }
+  @page {
+    margin: 0.3cm;
+  }
+
+  /* Displaying links */
+
+  /* a[href^="http"]:not([href*="mywebsite.com"]):after {
+    content: " (" attr(href) ")";
+  } */
+}
