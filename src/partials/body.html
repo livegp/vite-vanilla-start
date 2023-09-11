@@ -2,54 +2,54 @@
 <header class="l-header" id="header">
   <nav class="nav bd-container">
     <div>
-      <a href="./pdf/Resume_Pishta.pdf" download="Resume_Pishta">
+      <a download="Resume_Pishta" href="/src/pdf/Resume_Pishta.pdf">
         <i class="bx bx-download home__button"></i>
       </a>
     </div>
     <div class="nav__menu" id="nav-menu">
       <ul class="nav__list">
         <li class="nav__item">
-          <a class="nav__link active-link" href="#home">
+          <a href="#home" class="nav__link active-link">
             <i class="bx bx-home nav__icon"></i>Home
           </a>
         </li>
         <li class="nav__item">
-          <a class="nav__link" href="#languages">
+          <a href="#languages" class="nav__link">
             <i class="bx bx-user-voice nav__icon"></i>Languages
           </a>
         </li>
         <li class="nav__item">
-          <a class="nav__link" href="#hard-skills">
+          <a href="#skills" class="nav__link">
             <i class="bx bx-receipt nav__icon"></i>Skills
           </a>
         </li>
         <li class="nav__item">
-          <a class="nav__link" href="#interests">
+          <a href="#interests" class="nav__link">
             <i class="bx bx-landscape nav__icon"></i>Interests
           </a>
         </li>
         <li class="nav__item">
-          <a class="nav__link" href="#summary">
+          <a href="#summary" class="nav__link">
             <i class="bx bx-user nav__icon"></i>Summary
           </a>
         </li>
         <li class="nav__item">
-          <a class="nav__link" href="#experience">
+          <a href="#experience" class="nav__link">
             <i class="bx bx-briefcase-alt nav__icon"></i>Experience
           </a>
         </li>
         <li class="nav__item">
-          <a class="nav__link" href="#education">
+          <a href="#education" class="nav__link">
             <i class="bx bxs-graduation nav__icon"></i>Education
           </a>
         </li>
         <li class="nav__item">
-          <a class="nav__link" href="#courses">
+          <a href="#courses" class="nav__link">
             <i class="bx bx-edit nav__icon"></i>Courses
           </a>
         </li>
         <li class="nav__item">
-          <a class="nav__link" href="#certificates">
+          <a href="#certificates" class="nav__link">
             <i class="bx bx-award nav__icon"></i>Certificates
           </a>
         </li>
@@ -69,172 +69,222 @@
         <div class="home__container section bd-grid">
           <div class="home__section bd-grid">
             <img
-              class="home__img"
-              src="./img/perfil.png"
+              src="/src/img/perfil.jpg"
               alt="my photo"
+              class="home__img"
               tabindex="0" />
           </div>
           <div class="home__data bd-grid">
             <h1 class="home__title">Oleksandr <b>Pishta</b></h1>
             <h3 class="home__profession">Junior full stack developer</h3>
           </div>
-          <address>
-            <ul class="home__address bd-grid">
-              <li class="home__information">
-                <a
-                  class="home__link"
-                  href="https://goo.gl/maps/K226a75fPeYMoFjHA"
-                  target="_blank">
-                  <i class="bx bx-map home__icon"></i>
-                  Ukraine, Zaporizhzhya, Gulyapole
-                  <i class="bx bx-link-external external-link-icon"></i>
-                </a>
-              </li>
-              <li class="home__information">
-                <a class="home__link" href="mailto:live.gp@gmail.com">
-                  <i class="bx bx-envelope home__icon"></i>
-                  live.gp@gmail.com
-                  <i class="bx bx-link-external external-link-icon"></i>
-                </a>
-              </li>
-              <li class="home__information">
-                <a class="home__link" href="tel:+380667867752">
-                  <i class="bx bx-phone home__icon"></i>
-                  +380 66 786 77 52
-                  <i class="bx bx-link-external external-link-icon"></i>
-                </a>
-              </li>
-            </ul>
-          </address>
+          <div class="home__address bd-grid">
+            <a
+              href="https://goo.gl/maps/K226a75fPeYMoFjHA"
+              class="home__link"
+              target="_blank">
+              <i class="bx bx-map home__icon"></i>
+              Ukraine, Zaporizhzhya, Gulyapole
+              <div></div>
+              <i class="bx bx-link-external external-link-icon"></i>
+            </a>
+            <span class="home__information">
+              <a href="mailto:live.gp@gmail.com" class="home__link">
+                <i class="bx bx-envelope home__icon"></i>
+                live.gp@gmail.com
+                <i class="bx bx-link-external external-link-icon"></i>
+              </a>
+            </span>
+            <span class="home__information">
+              <a href="tel:+380667867752" class="home__link">
+                <i class="bx bx-phone home__icon"></i>
+                +380 66 786 77 52
+                <i class="bx bx-link-external external-link-icon"></i>
+              </a>
+            </span>
+          </div>
         </div>
         <!-- Theme change button -->
-        <button class="change-theme" type="button" title="Changing theme">
-          <i class="bx bx-moon" id="theme-button"></i>
-        </button>
+        <i class="bx bx-moon change-theme" title="Thema" id="theme-button"></i>
         <!-- Button to generate and download the pdf. Available for desktop. -->
-        <button class="generate-pdf" type="button" title="Create PDF">
-          <i class="bx bx-download" id="resume-button"></i>
-        </button>
-        <!-- Link to Resume site -->
-        <a
-          class="link-resume"
-          href="https://livegp.github.io/resume/"
-          title="Site Resume"
-          target="_blank"
-          ><i class="bx bx-link-external"></i
-        ></a>
+        <i
+          class="bx bx-download generate-pdf"
+          title="Creation PDF"
+          id="resume-button"></i>
       </section>
       <!--========== SOCIAL ==========-->
       <section class="social section" id="social">
         <h2 class="section-title">Social</h2>
-        <ul class="social__container bd-grid">
-          <li>
-            <a
-              class="social__link"
-              href="https://www.linkedin.com/in/oleksandr-pishta/"
-              target="_blank">
-              <i class="bx bxl-linkedin-square social__icon"></i>
-              linkedin
-              <i class="bx bx-link-external external-link-icon"></i>
-            </a>
-          </li>
-          <li>
-            <a
-              class="social__link"
-              href="https://github.com/livegp/"
-              target="_blank">
-              <i class="bx bxl-github social__icon"></i>
-              github
-              <i class="bx bx-link-external external-link-icon"></i>
-            </a>
-          </li>
-          <li>
-            <a
-              class="social__link"
-              href="viber://chat?number=%2B380667867752"
-              target="_blank">
-              <i class="bx bxs-phone-call social__icon"></i>
-              viber
-              <i class="bx bx-link-external external-link-icon"></i>
-            </a>
-          </li>
-          <li>
-            <a
-              class="social__link"
-              href="https://telegram.me/live_gp"
-              target="_blank">
-              <i class="bx bxl-telegram social__icon"></i>
-              telegram
-              <i class="bx bx-link-external external-link-icon"></i>
-            </a>
-          </li>
-        </ul>
+        <div class="social__container bd-grid">
+          <a
+            href="https://www.linkedin.com/in/oleksandr-pishta/"
+            target="_blank"
+            class="social__link">
+            <i class="bx bxl-linkedin-square social__icon"></i>
+            linkedin
+            <i class="bx bx-link-external external-link-icon"></i>
+          </a>
+          <a
+            href="https://github.com/livegp/"
+            target="_blank"
+            class="social__link">
+            <i class="bx bxl-github social__icon"></i>
+            github
+            <i class="bx bx-link-external external-link-icon"></i>
+          </a>
+          <a
+            href="https://www.facebook.com/oleksandr.pishta/"
+            target="_blank"
+            class="social__link">
+            <i class="bx bxl-facebook-square social__icon"></i>
+            facebook
+            <i class="bx bx-link-external external-link-icon"></i>
+          </a>
+          <a
+            href="https://www.instagram.com/pishtaoleksandr/"
+            target="_blank"
+            class="social__link">
+            <i class="bx bxl-instagram-alt social__icon"></i>
+            instagram
+            <i class="bx bx-link-external external-link-icon"></i>
+          </a>
+          <a
+            href="https://twitter.com/live_gp"
+            target="_blank"
+            class="social__link">
+            <i class="bx bxl-twitter social__icon"></i>
+            twitter
+            <i class="bx bx-link-external external-link-icon"></i>
+          </a>
+          <a
+            href="viber://chat?number=%2B380667867752"
+            target="_blank"
+            class="social__link">
+            <i class="bx bxs-phone-call social__icon"></i>
+            viber
+            <i class="bx bx-link-external external-link-icon"></i>
+          </a>
+          <a
+            href="https://telegram.me/live_gp"
+            target="_blank"
+            class="social__link">
+            <i class="bx bxl-telegram social__icon"></i>
+            telegram
+            <i class="bx bx-link-external external-link-icon"></i>
+          </a>
+        </div>
       </section>
       <!--========== LANGUAGES ==========-->
       <section class="section" id="languages">
         <h2 class="section-title">Languages</h2>
-        <ul class="languages__container bd-grid">
-          <li class="languages__circle">Ukrainian C2</li>
-          <li class="languages__circle">English A1</li>
-        </ul>
+        <div class="languages__container bd-grid">
+          <div>
+            <span class="languages__circle"></span>Ukrainian
+            <div class="languages__f-line">
+              <div class="languages__line" style="width: 100%"></div>
+            </div>
+          </div>
+          <div>
+            <span class="languages__circle"></span>Russian
+            <div class="languages__f-line">
+              <div class="languages__line" style="width: 100%"></div>
+            </div>
+          </div>
+          <div>
+            <span class="languages__circle"></span>Deutsch
+            <div class="languages__f-line">
+              <div class="languages__line" style="width: 15%"></div>
+            </div>
+          </div>
+          <div>
+            <span class="languages__circle"></span>English
+            <div class="languages__f-line">
+              <div class="languages__line" style="width: 5%"></div>
+            </div>
+          </div>
+        </div>
       </section>
       <!--========== HARD SKILLS  ==========-->
       <section class="section" id="hard-skills">
         <h2 class="section-title">Hard skills</h2>
-        <ul class="skills__container bd-grid">
-          <li class="skills__circle">Html</li>
-          <li class="skills__circle">CSS</li>
-          <li class="skills__circle">SCSS</li>
-          <li class="skills__circle">JavaScript</li>
-          <li class="skills__circle">React</li>
-          <li class="skills__circle">Redax</li>
-          <li class="skills__circle">Rest API</li>
-          <li class="skills__circle">Git</li>
-          <li class="skills__circle">Node.js</li>
-          <li class="skills__circle">Figma</li>
-          <li class="skills__circle">Webpack</li>
-          <li class="skills__circle">Parcel</li>
-          <li class="skills__circle">Vite</li>
-          <li class="skills__circle">ESLint</li>
-          <li class="skills__circle">Stylelint</li>
-          <li class="skills__circle">Style-component</li>
-        </ul>
+        <div class="skills__container bd-grid">
+          <div>
+            <span class="skills__circle"></span>Html
+            <div class="skills__f-line">
+              <div class="skills__line" style="width: 90%"></div>
+            </div>
+          </div>
+          <div>
+            <span class="skills__circle"></span>Css
+            <div class="skills__f-line">
+              <div class="skills__line" style="width: 80%"></div>
+            </div>
+          </div>
+          <div>
+            <span class="skills__circle"></span>JavaScript
+            <div class="skills__f-line">
+              <div class="skills__line" style="width: 70%"></div>
+            </div>
+          </div>
+          <div>
+            <span class="skills__circle"></span>React
+            <div class="skills__f-line">
+              <div class="skills__line" style="width: 60%"></div>
+            </div>
+          </div>
+        </div>
       </section>
       <!--========== SOFT SKILLS  ==========-->
       <section class="section" id="soft-skills">
         <h2 class="section-title">Soft skills</h2>
-        <ul class="skills__container bd-grid">
-          <li class="skills__circle">Astute</li>
-          <li class="skills__circle">Attentive</li>
-          <li class="skills__circle">Calm</li>
-          <li class="skills__circle">Conscientious</li>
-          <li class="skills__circle">Creative</li>
-          <li class="skills__circle">Diligent</li>
-          <li class="skills__circle">Honest</li>
-          <li class="skills__circle">Meticulous</li>
-        </ul>
+        <div class="skills__container bd-grid">
+          <div>
+            <span class="skills__circle"></span>Html
+            <div class="skills__f-line">
+              <div class="skills__line" style="width: 90%"></div>
+            </div>
+          </div>
+          <div>
+            <span class="skills__circle"></span>Css
+            <div class="skills__f-line">
+              <div class="skills__line" style="width: 80%"></div>
+            </div>
+          </div>
+          <div>
+            <span class="skills__circle"></span>JavaScript
+            <div class="skills__f-line">
+              <div class="skills__line" style="width: 70%"></div>
+            </div>
+          </div>
+          <div>
+            <span class="skills__circle"></span>React
+            <div class="skills__f-line">
+              <div class="skills__line" style="width: 60%"></div>
+            </div>
+          </div>
+        </div>
       </section>
       <!--========== INTERESTS ==========-->
       <section class="section" id="interests">
         <h2 class="section-title">Interests</h2>
-        <ul class="interests__container bd-grid">
-          <li class="interests">
+        <div class="interests__container bd-grid">
+          <div class="interests">
             <i class="bx bx-headphone interests__icon"></i>
             Music
-          </li>
-          <li class="interests">
+          </div>
+          <div class="interests">
             <i class="bx bx-cycling interests__icon"></i>
             Velo
-          </li>
-          <li class="interests">
+          </div>
+          <div class="interests">
             <i class="bx bx-book interests__icon"></i>
             Legislation
-          </li>
-          <li class="interests">
+          </div>
+          <div class="interests">
             <i class="bx bx-dumbbell interests__icon"></i>
             Sports
-          </li>
-        </ul>
+          </div>
+        </div>
       </section>
       <!--========== SUMMARY ==========-->
       <section class="summary section" id="summary">
@@ -253,121 +303,86 @@
       <!--========== PROJECT EXPERIENCE ==========-->
       <section class="project section" id="project">
         <h2 class="section-title">Project experience</h2>
-        <ul class="project__container bd-grid">
-          <li class="project__content">
-            <div>
+        <div class="project__container bd-grid">
+          <div class="project__content">
+            <div class="project__time">
               <span class="project__rounder"></span>
               <span class="project__line"></span>
             </div>
             <div class="project__data bd-grid">
-              <div>
+              <a
+                class="project__link"
+                href="https://b1b0nner.github.io/7UP/"
+                target="_blank">
                 <h3 class="project__title">Bookshelf</h3>
-                <a
-                  class="project__link"
-                  href="https://b1b0nner.github.io/7UP/"
-                  title="GitHub Pages"
-                  target="_blank">
-                  <i class="bx bxs-layout project__icon"></i>
-                </a>
-                <a
-                  class="project__link"
-                  href="https://github.com/B1B0nNer/7UP"
-                  title="GitHub"
-                  target="_blank">
-                  <i class="bx bxl-github project__icon"></i>
-                </a>
-              </div>
+                <i class="bx bx-link-external external-link-icon"></i>
+              </a>
               <span class="project__company"
                 >[HTML5 · CSS · SCSS · JS · REST APIs · Parcel · Figma · GitHub
                 · Stylelint · ESLint]
               </span>
               <p class="project__description">
-                Team project. Role: Developer<br />
-                Bookseller website. In this project, I worked on a responsive
-                menu that has a theme switcher and a login button, which I
-                combined with login logic that another team member was
-                responsible for. A button to scroll to the top of the page was
-                also made.
+                Team project. In this project, I worked on a responsive menu
+                that has a theme switcher and a login button, which I combined
+                with login logic that another team member was responsible for. A
+                button to scroll to the top of the page was also made.
               </p>
             </div>
-          </li>
-          <li class="project__content">
-            <div>
+          </div>
+          <div class="project__content">
+            <div class="project__time">
               <span class="project__rounder"></span>
               <span class="project__line"></span>
             </div>
             <div class="project__data bd-grid">
-              <div>
+              <a
+                class="project__link"
+                href="https://vitalii-dashivets.github.io/project-chocolate/"
+                target="_blank">
                 <h3 class="project__title">Simply chocolate</h3>
-                <a
-                  class="project__link"
-                  href="https://vitalii-dashivets.github.io/project-chocolate/"
-                  title="GitHub Pages"
-                  target="_blank">
-                  <i class="bx bxs-layout project__icon"></i>
-                </a>
-                <a
-                  class="project__link"
-                  href="https://github.com/Vitalii-Dashivets/project-chocolate"
-                  title="GitHub"
-                  target="_blank">
-                  <i class="bx bxl-github project__icon"></i>
-                </a>
-              </div>
+                <i class="bx bx-link-external external-link-icon"></i>
+              </a>
               <span class="project__company"
                 >[HTML5 · CSS · SCSS · JS · Vite · Stylelint · Figma · GitHub ·
                 HTML]</span
               >
               <p class="project__description">
-                Team project. Role: Developer<br />
-                Website of a chocolate manufacturer. Worked on the feedback
-                section (chocolate is loved), designed in the form of a carousel
-                and a modal window this section.
+                Team project. Worked on the feedback section (chocolate is
+                loved), designed in the form of a carousel and a modal window of
+                this section.
               </p>
             </div>
-          </li>
-          <li class="project__content">
-            <div>
+          </div>
+          <div class="project__content">
+            <div class="project__time">
               <span class="project__rounder"></span>
               <!-- <span class="project__line"></span> -->
             </div>
             <div class="project__data bd-grid">
-              <div>
+              <a
+                class="project__link"
+                href="https://livegp.github.io/goit-markup-hw-07/"
+                target="_blank">
                 <h3 class="project__title">WebStudio</h3>
-                <a
-                  class="project__link"
-                  href="https://livegp.github.io/goit-markup-hw-07/"
-                  title="GitHub Pages"
-                  target="_blank">
-                  <i class="bx bxs-layout project__icon"></i>
-                </a>
-                <a
-                  class="project__link"
-                  href="https://github.com/livegp/goit-markup-hw-07"
-                  title="GitHub"
-                  target="_blank">
-                  <i class="bx bxl-github project__icon"></i>
-                </a>
-              </div>
+                <i class="bx bx-link-external external-link-icon"></i>
+              </a>
               <span class="project__company"
                 >[HTML5 · CSS · SCSS · Stylelint · Figma · GitHub]</span
               >
               <p class="project__description">
-                Individual project. Role: Developer<br />
-                WebStudio company website. Adaptive design transformation
-                effects, modal windows. With this project, he secured his main
-                points layout skills
+                An individual project in which he consolidated his basic layout
+                skills
               </p>
             </div>
-          </li>
-        </ul>
+          </div>
+        </div>
       </section>
       <!--========== WORK EXPERIENCE ==========-->
       <section class="experience section" id="experience">
         <h2 class="section-title">Work experience</h2>
-        <ul class="experience__container bd-grid">
-          <li class="experience__content">
-            <div>
+        <div class="experience__container bd-grid">
+          <div class="experience__content">
+            <div class="experience__time">
               <span class="experience__rounder"></span>
               <span class="experience__line"></span>
             </div>
@@ -385,9 +400,9 @@
                 to them, budgetary and financial obligations, spending
               </p>
             </div>
-          </li>
-          <li class="experience__content">
-            <div>
+          </div>
+          <div class="experience__content">
+            <div class="experience__time">
               <span class="experience__rounder"></span>
               <span class="experience__line"></span>
             </div>
@@ -399,9 +414,9 @@
                 image, using a machine, on a stone
               </p>
             </div>
-          </li>
-          <li class="experience__content">
-            <div>
+          </div>
+          <div class="experience__content">
+            <div class="experience__time">
               <span class="experience__rounder"></span>
               <span class="experience__line"></span>
             </div>
@@ -415,9 +430,9 @@
                 adjustment of PCs
               </p>
             </div>
-          </li>
-          <li class="experience__content">
-            <div>
+          </div>
+          <div class="experience__content">
+            <div class="experience__time">
               <span class="experience__rounder"></span>
               <!-- <span class="experience__line"></span> -->
             </div>
@@ -428,15 +443,15 @@
               >
               <p class="experience__description">Issuance of consumer loans</p>
             </div>
-          </li>
-        </ul>
+          </div>
+        </div>
       </section>
       <!--========== EDUCATION ==========-->
       <section class="education section" id="education">
         <h2 class="section-title">Education</h2>
-        <ul class="education__container bd-grid">
-          <li class="education__content">
-            <div>
+        <div class="education__container bd-grid">
+          <div class="education__content">
+            <div class="education__time">
               <span class="education__rounder"></span>
               <!-- <span class="education__line"></span> -->
             </div>
@@ -447,40 +462,31 @@
               >
               <!-- <span class="education__year"></span> -->
             </div>
-          </li>
-        </ul>
+          </div>
+        </div>
       </section>
       <!--========== COURSES ==========-->
       <section class="section" id="courses">
         <h2 class="section-title">Courses</h2>
-        <ul class="courses__container bd-grid">
-          <li class="courses__content">
-            <div>
+        <div class="courses__container bd-grid">
+          <div class="courses__content">
+            <div class="courses__time">
               <span class="courses__rounder"></span>
               <span class="courses__line"></span>
             </div>
             <div class="courses__data bd-grid">
-              <h3 class="courses__title">Full Stack Developer</h3>
-              <span class="courses__company">2023 | GoIT </span>
+              <h3 class="courses__title">Candidate</h3>
+              <span class="courses__company"
+                >2020 | Дія. Digital education
+              </span>
               <!-- <p class="courses__description">
-                  </p> -->
+                    </p> -->
             </div>
-          </li>
-          <!-- <li class="courses__content">
-                <div>
-                  <span class="courses__rounder"></span>
-                  <span class="courses__line"></span>
-                </div>
-                <div class="courses__data bd-grid">
-                  <h3 class="courses__title">Candidate</h3>
-                  <span class="courses__company">2020 | Дія. Digital education
-                  </span>
-                </div>
-              </li> -->
-          <li class="courses__content">
-            <div>
+          </div>
+          <div class="courses__content">
+            <div class="courses__time">
               <span class="courses__rounder"></span>
-              <!-- <span class="courses__line"></span> -->
+              <span class="courses__line"></span>
             </div>
             <div class="courses__data bd-grid">
               <h3 class="courses__title">
@@ -491,76 +497,80 @@
               >
               <!-- <p class="courses__description"></p> -->
             </div>
-          </li>
-
-          <!-- <li class="courses__content">
-                <div>
-                  <span class="courses__rounder"></span>
-                  <span class="courses__line"></span>
-                </div>
-                <div class="courses__data bd-grid">
-                  <h3 class="courses__title">
-                    Effective budget process in local bodies municipality
-                  </h3>
-                  <span class="courses__company">2019 | Prometheus </span>
-                </div>
-              </li>
-              <li class="courses__content">
-                <div>
-                  <span class="courses__rounder"></span>
-                  <span class="courses__line"></span>
-                </div>
-                <div class="courses__data bd-grid">
-                  <h3 class="courses__title">
-                    The psychology of stress and how to deal with it
-                  </h3>
-                  <span class="courses__company">2019 | Prometheus</span>
-                </div>
-              </li>
-              <li class="courses__content">
-                <div>
-                  <span class="courses__rounder"></span>
-                  <span class="courses__line"></span>
-                </div>
-                <div class="courses__data bd-grid">
-                  <h3 class="courses__title">
-                    How to effectively plan and conduct a dialogue
-                  </h3>
-                  <span class="courses__company">2019 | Prometheus</span>
-                </div>
-              </li>
-              <li class="courses__content">
-                <div>
-                  <span class="courses__rounder"></span>
-                  <span class="courses__line"></span>
-                </div>
-                <div class="courses__data bd-grid">
-                  <h3 class="courses__title">
-                    Conflict of interest: you need to know! From theory to
-                    practice
-                  </h3>
-                  <span class="courses__company">2019 | Prometheus</span>
-                </div>
-              </li>
-              <li class="courses__content">
-                <div>
-                  <span class="courses__rounder"></span>
-                </div>
-                <div class="courses__data bd-grid">
-                  <h3 class="courses__title">
-                    Conflict of interest: you need to know!
-                  </h3>
-                  <span class="courses__company">2018 | Prometheus</span>
-                </div>
-              </li> -->
-        </ul>
+          </div>
+          <div class="courses__content">
+            <div class="courses__time">
+              <span class="courses__rounder"></span>
+              <span class="courses__line"></span>
+            </div>
+            <div class="courses__data bd-grid">
+              <h3 class="courses__title">
+                Effective budget process in local bodies municipality
+              </h3>
+              <span class="courses__company">2019 | Prometheus </span>
+              <!-- <p class="experience__description"></p> -->
+            </div>
+          </div>
+          <div class="courses__content">
+            <div class="courses__time">
+              <span class="courses__rounder"></span>
+              <span class="courses__line"></span>
+            </div>
+            <div class="courses__data bd-grid">
+              <h3 class="courses__title">
+                The psychology of stress and how to deal with it
+              </h3>
+              <span class="courses__company">2019 | Prometheus</span>
+              <!-- <p class="courses__description"></p> -->
+            </div>
+          </div>
+          <div class="courses__content">
+            <div class="courses__time">
+              <span class="courses__rounder"></span>
+              <span class="courses__line"></span>
+            </div>
+            <div class="courses__data bd-grid">
+              <h3 class="courses__title">
+                How to effectively plan and conduct a dialogue
+              </h3>
+              <span class="courses__company">2019 | Prometheus</span>
+              <!-- <p class="courses__description"></p> -->
+            </div>
+          </div>
+          <div class="courses__content">
+            <div class="courses__time">
+              <span class="courses__rounder"></span>
+              <span class="courses__line"></span>
+            </div>
+            <div class="courses__data bd-grid">
+              <h3 class="courses__title">
+                Conflict of interest: you need to know! From theory to practice
+              </h3>
+              <span class="courses__company">2019 | Prometheus</span>
+              <!-- <p class="courses__description"></p> -->
+            </div>
+          </div>
+          <div class="courses__content">
+            <div class="courses__time">
+              <span class="courses__rounder"></span>
+              <!-- <span class="courses__line"></span> -->
+            </div>
+            <div class="courses__data bd-grid">
+              <h3 class="courses__title">
+                Conflict of interest: you need to know!
+              </h3>
+              <span class="courses__company">2018 | Prometheus</span>
+              <!-- <p class="courses__description"></p> -->
+            </div>
+          </div>
+        </div>
       </section>
       <!--========== CERTIFICATES ==========-->
       <section class="certificate section" id="certificate">
         <h2 class="section-title">Certificates</h2>
-        <ul class="certificate__container bd-grid">
-          <li class="certificate__content">
-            <div>
+        <div class="certificate__container bd-grid">
+          <div class="certificate__content">
+            <div class="certificate__time">
               <span class="certificate__rounder"></span>
               <span class="certificate__line"></span>
             </div>
@@ -572,11 +582,11 @@
                 >2020 | Дія. Digital education
               </span>
               <!-- <p class="certificate__description">
-                  </p> -->
+                    </p> -->
             </div>
-          </li>
-          <li class="certificate__content">
-            <div>
+          </div>
+          <div class="certificate__content">
+            <div class="certificate__time">
               <span class="certificate__rounder"></span>
               <!-- <span class="certificate__line"></span> -->
             </div>
@@ -589,17 +599,17 @@
               >
               <!-- <p class="certificate__description"></p> -->
             </div>
-          </li>
-        </ul>
+          </div>
+        </div>
       </section>
     </div>
   </div>
 </main>
 <!--========== SCROLL TOP ==========-->
-<a class="scrolltop" id="scroll-top" href="#">
+<a href="#" class="scrolltop" id="scroll-top">
   <i class="bx bx-up-arrow-alt scrolltop__icon"></i>
 </a>
 <!--========== HTML2PDF ==========-->
-<!-- <script src="./js/html2pdf.bundle.min.js"></script> -->
+<!-- <script type="module" src="../../public/html2pdf.bundle.min.js"></script> -->
 <!--========== MAIN JS ==========-->
-<script src="/main.js"></script>
+<script type="module" src="/main.js"></script>
