@@ -1,17 +1,13 @@
 {
-  "plugins": ["stylelint-order", "stylelint-scss", "@namics/stylelint-bem"],
+  "plugins": ["stylelint-order", "stylelint-scss"],
   "extends": [
     "stylelint-config-styled-components",
     "stylelint-config-standard-scss",
-    "stylelint-config-idiomatic-order",
+    "stylelint-config-clean-order",
     "stylelint-config-prettier-scss"
   ],
   "rules": {
     "font-family-name-quotes": null,
-    "plugin/stylelint-bem-namics": {
-      "patternPrefixes": [],
-      "helperPrefixes": []
-    },
     "scss/at-rule-no-unknown": [
       true,
       {
