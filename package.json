@@ -25,6 +25,7 @@
     "@vitejs/plugin-legacy": "^4.1.1",
     "@vitejs/plugin-react-swc": "^3.3.2",
     "axios": "^1.5.0",
+    "boxicons": "^2.1.4",
     "formik": "^2.4.3",
     "html2pdf.js": "^0.10.1",
     "ky": "^1.0.0",

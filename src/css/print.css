@@ -37,10 +37,6 @@
     padding: 0.75rem 0 0;
   }
 
-  .section-title {
-    margin-bottom: 0.75rem;
-  }
-
   .home__container {
     gap: 1.5rem;
   }
@@ -121,10 +117,10 @@
   }
 
   .resume__left {
+    padding: 0 1.5rem;
     background-color: var(--container-color-alt);
   }
 
-  .resume__left,
   .resume__right {
     padding: 0 1.5rem;
   }
